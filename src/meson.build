@@ -2,6 +2,7 @@ stb_image_source = ['stb_image.c', 'stb_image_write.c', 'stb_image_resize.c']
 
 stb_image_lib = static_library('stb_image',
     stb_image_source,
+    c_args: stb_image_cflags,
     include_directories: stb_image_include,
     install: true
 )
